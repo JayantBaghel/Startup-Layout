@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: black;
+        margin: 0;
+      }
+      .section1 {
+        background-color: #fcaf02;
+      }
+      .section1 nav {
+        display: inline;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+      }
+      .section1 nav h1 {
+        padding-top: 10px;
+        padding-left: 10px;
+        background-color: #fcaf02;
+        font-size: 1.5rem;
+        width: 90%;
+        height: 45px;
+        cursor: pointer;
+        position: relative;
+        /* left: 20px; */
+      }
+      .section1 nav h1 u {
+        background-color: #fcaf02;
+      }
+      .section1 nav ul {
+        margin-right: 10px;
+        position: absolute;
+        background-color: #fcaf02;
+        top: 15px;
+        right: 15px;
+      }
+      .section1 nav ul li {
+        margin-right: 15px;
+        text-decoration: none;
+        background-color: #fcaf02;
+        display: inline;
+        cursor: pointer;
+      }
+
+      .section2 {
+        color: white;
+      }
+      .section2 div {
+        font-size: 2rem;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+      }
+      .section2 p {
+        width: 50%;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+      }
+      .section2 img {
+        height: 35%;
+        width: 30%;
+        position: absolute;
+        top: 10%;
+        left: 60%;
+      }
+
+      .section2 button {
+        background-color: #fcaf02;
+        width: 200px;
+        height: 35px;
+        border-radius: 25px;
+        font-size: 1rem;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .section3 {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 90%;
+      }
+
+      .section3 div {
+        color: #fcaf02;
+        font-size: 3rem;
+      }
+      .section3 form {
+        color: #fcaf02;
+      }
+      .section3 form input {
+        display: block;
+        border: 2px solid #fcaf02;
+        width: 100%;
+        margin-top: 25px;
+        height: 40px;
+        border-radius: 25px;
+      }
+      .section3 form input::placeholder {
+        color: #fcaf02;
+      }
+      .section3 center button {
+        background-color: #fcaf02;
+        width: 20%;
+        height: 50px;
+        border-radius: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      .section4 {
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        width: 90%;
+      }
+      .section4 table {
+        width: 90%;
+        color: #fcaf02;
+        text-align: center;
+      }
+      .section4 table tr {
+        height: 40px;
+      }
+      .section4 table:last-child {
+        background-color: #fcaf02;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section1">
+      <nav style="position: sticky; top: 0%">
+        <h1>Start<u>up</u></h1>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </section>
+    <section class="section2">
+      <div>Startup Landing Page</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae
+        incidunt similique deserunt possimus voluptates aliquam a, mollitia
+        explicabo sequi corporis sed modi eligendi neque expedita nemo
+        perferendis animi commodi obcaecati iure odit fugiat fugit aliquid
+        nihil! Rerum dolor deserunt error vero asperiores tempore veritatis,
+        minus cum ducimus. Culpa provident rerum reiciendis fugit, vel corrupti.
+        Nisi cumque consectetur facere, aperiam vitae tempora! Eos, expedita
+        laudantium. Magni, dignissimos. Reiciendis vel quas sit consequatur
+        autem exercitationem soluta voluptatem eaque modi, ut ducimus commodi
+        omnis sequi veniam labore in facere dolores aliquam ipsa officiis, vitae
+        eum! Saepe necessitatibus eius nesciunt modi enim blanditiis.
+      </p>
+      <button>Login</button>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt=""
+      />
+    </section>
+    <section class="section3">
+      <div>Contact Us</div>
+      <form action="post">
+        <input type="text" class="input1" placeholder="Name" /><input
+          type="email"
+          class="input2"
+          placeholder="Email"
+        /><input
+          style="width: 48%"
+          type="text"
+          class="input3"
+          placeholder="Mobile Number"
+        /><input
+          style="width: 48%; position: absolute; right: 0px; top: 60%"
+          type="text"
+          class="input4"
+          placeholder="City"
+        />
+      </form>
+      <center><button>Submit Form</button></center>
+    </section>
+    <section class="section4">
+      <table>
+        <tr>
+          <th>SNO.</th>
+          <th>Startup Name</th>
+          <th>Startup Description</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>WowIndia</td>
+          <td>A startup with WOW Ideas.</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+        <tr style="background-color: #fcaf02">
+          <td>&#8734;</td>
+          <td>Final Footer</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
